@@ -1,0 +1,38 @@
+/*Секция бредкрумб*/
+#breadcrumbs
+  background-color: #f8f3f4
+  .container
+    height: 148px
+    display: flex
+    align-items: center
+    justify-content: space-between
+.parent-category
+    color: $color-coral
+    font-family: 'Lato', sans-serif
+    font-size: 24px
+    font-weight: 900
+    line-height: 20px
+    text-transform: uppercase
+    text-decoration: none
+.parent-category:hover
+    color: #000000
+
+
+ul.breadcrumb
+  display: flex
+  li
+    list-style: none
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    color: $color-coral
+    margin-left: 5px
+  a
+    text-decoration: none
+    color: #636363
+    font-weight: 300
+  a:after
+    content: ' /'
+  a:hover
+    color: $color-coral
