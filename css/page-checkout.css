@@ -1,0 +1,282 @@
+@charset "UTF-8";
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/*Секция бредкрумб */
+#breadcrumbs {
+  background-color: #f8f3f4; }
+  #breadcrumbs .container {
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.parent-category {
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.parent-category:hover {
+  color: #000000; }
+
+ul.breadcrumb {
+  display: flex; }
+  ul.breadcrumb li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #f16d7f;
+    margin-left: 5px; }
+  ul.breadcrumb a {
+    text-decoration: none;
+    color: #636363;
+    font-weight: 300; }
+  ul.breadcrumb a:after {
+    content: " /"; }
+  ul.breadcrumb a:hover {
+    color: #f16d7f; }
+
+/*шаги оформления заказа */
+.checkout-steps {
+  margin-top: 90px; }
+
+.step {
+  border-bottom: 1px solid #e8e8e8; }
+  .step__header {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 72px; }
+  .step__row {
+    justify-content: space-between;
+    margin-top: -20px; }
+  .step__col {
+    width: 50%;
+    padding: 0 0 80px 35px; }
+  .step__title {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 30px 0 10px 0; }
+  .step__text {
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 25px; }
+    .step__text_red {
+      color: #ff0d0d;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      display: block; }
+  .step__link {
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    display: block; }
+  .step__link:hover {
+    color: #f16d7f; }
+  .step__link2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+    color: #222222; }
+  .step__link2:hover {
+    color: #f16d7f; }
+  .step__label_required {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .step__label_required:after {
+    content: " *";
+    color: #ff0d0d; }
+  .step__input {
+    display: block;
+    height: 45px;
+    width: 390px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 10px; }
+  .step__button {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+    transition: all 0.5s linear 0ms; }
+  .step__button:hover {
+    color: #f16d7f;
+    border: #f16d7f 1px solid;
+    width: 186px;
+    height: 56px;
+    margin-top: 37px;
+    margin-left: -3px; }
+  .step__radio {
+    margin-bottom: 10px; }
+    .step__radio label {
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .step__radio_input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0; }
+    .step__radio_input + label {
+      position: relative;
+      padding: 0 0 0 30px;
+      cursor: pointer; }
+    .step__radio_input + label:before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border: 2px solid #555555;
+      border-radius: 50%;
+      background: #FFF; }
+    .step__radio_input + label:after {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 5px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #000000;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: 0.2s; }
+    .step__radio_input:checked + label:after {
+      opacity: 1; }
+
+/*Секция подписка */
+#subscribe {
+  height: 438px;
+  background: url("../img/cover-bg1.jpg");
+  background-size: cover; }
+
+.reviews {
+  padding-top: 110px;
+  width: 50%;
+  float: left; }
+
+.review-foto {
+  float: left;
+  padding-right: 28px; }
+
+.review-caption {
+  float: left;
+  width: 400px; }
+
+.review-content {
+  color: rgba(34, 34, 36, 0.67);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px; }
+
+.review-author {
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 8px; }
+
+.review-city {
+  color: #222224;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px; }
+
+.subscribe {
+  padding-top: 140px;
+  float: right;
+  text-align: center;
+  width: 390px; }
+
+h3.subscribe-title {
+  color: rgba(34, 34, 36, 0.67);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 54px; }
+
+span.subscribe-text {
+  color: rgba(34, 34, 36, 0.67);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.subscribe-input-box {
+  width: 100%;
+  max-width: 400px;
+  float: left;
+  margin-top: 30px; }
+
+.subscribe-input {
+  background-color: #e1e1e1;
+  color: rgba(34, 34, 36, 0.67);
+  height: 46px;
+  border: none;
+  font-size: 14px;
+  padding-left: 30px;
+  float: left;
+  max-width: 283px;
+  width: 100%;
+  border-radius: 30px 0 0 30px;
+  padding-right: 105px; }
+
+button.subscribe-button {
+  float: left;
+  width: 104px;
+  -webkit-border-fit: lines;
+  overflow: visible;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer; }
+
+.subscribe-button span {
+  height: 46px;
+  line-height: 46px;
+  padding: 0 20px;
+  border-radius: 0 30px 30px 0;
+  opacity: 1;
+  background-color: #f16d7f;
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400; }
+
+.subscribe-button span span {
+  padding: 0;
+  color: inherit;
+  border-width: 0;
+  background: transparent;
+  line-height: inherit; }
+
+/*# sourceMappingURL=page-checkout.css.map */

@@ -1,0 +1,99 @@
+$color-coral: #f16d7f
+$color_red: #ff0d0d
+@import "section-hz-breadcrumb"
+
+.category
+  display: flex
+aside.left
+  width: 230px
+main.category-main
+  width: 846px
+/*Блок с товарами*/
+.product-flex
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 60px
+
+.product
+  background-color: #ffffff
+  width: 263px
+  height: 364px
+  margin-bottom: 39px
+
+a.wrap-link
+  display: block
+  position: absolute
+  width: 263px
+  height: 364px
+.product a
+  text-decoration: none
+
+.product:hover .product-caption
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+.product:hover .product-hover
+  display: block
+
+.product-cart:hover
+  color: $color-coral
+.product-image
+  height: 280px
+  position: relative
+
+.product-image img
+  height: 280px
+  position: relative
+  z-index: 0
+
+.product-hover
+  height: 280px
+  position: absolute
+  z-index: 1
+  top: 0
+  width: 261px
+  background-color: rgba(58, 56, 56, 0.83)
+  display: none
+
+.product-cart
+  color: #ffffff
+  font-size: 13px
+  font-weight: 700
+  border: solid 1px #ffffff
+  box-sizing: border-box
+  background-color: rgba(255, 255, 255, 0)
+  width: 123px
+  height: 39px
+  display: flex
+  align-items: center
+  margin: 100px auto
+
+.product-cart:hover
+  color: $color-coral
+  border: solid 1px $color-coral
+
+.product-cart img
+  width: 23px
+  height: 22px
+  margin: 0 12px
+.product-caption
+  padding: 19px 14px
+
+.product-name
+  color: #222222
+  text-transform: uppercase
+
+.product-price
+  color: $color-coral
+  font-size: 16px
+  font-weight: 700
+  margin-top: 10px
+
+.product-price:before
+  content: '$'
+
+
+
+
+
+@import "section-hz-subscribe"

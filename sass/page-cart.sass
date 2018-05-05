@@ -1,0 +1,49 @@
+$color-coral: #f16d7f
+.row
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+@import "section-hz-breadcrumb"
+
+/*Товары в корзине*/
+#cart-list .row
+  border-bottom: 1px solid #eaeaea
+  margin-bottom: 22px
+  &_details
+    width: 40%
+    display: flex
+
+#cart-list .label
+  justify-content: space-between
+  font-size: 13px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+  height: 122px
+  padding: 90px 0 22px 0
+#cart-list .product
+  justify-content: space-between
+  padding-bottom: 22px
+  &_img
+    padding-right: 22px
+
+#cart-list h2
+  font-size: 13px
+  font-weight: 400
+  text-transform: uppercase
+  margin: 10px 0 40px 0
+#cart-list .options
+  color: #6f6e6e
+  font-size: 13px
+  font-weight: 300
+  line-height: 20px
+#cart-list span
+  display: block
+#cart-list b
+  color: #575757
+  font-weight: 400
+
+@import "section-hz-subscribe"

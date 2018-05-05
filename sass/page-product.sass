@@ -1,0 +1,105 @@
+$color-coral: #f16d7f
+$color_red: #ff0d0d
+@import "section-hz-breadcrumb"
+/*Секция Картинка*/
+#product-image
+  height: 777px
+  border: 1px solid #eaeaea
+  background-color: #f7f7f7
+  img
+    margin: 11px auto
+    display: block
+.product-desc
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  position: relative
+  z-index: 2
+  display: flex
+  margin: -80px auto 120px
+  justify-content: center
+  flex-direction: column
+  &_container
+    width: 620px
+    margin: 0 auto
+  &_tag
+    color: $color-coral
+    font-size: 14px
+    font-weight: 700
+    line-height: 24px
+    text-transform: uppercase
+    padding-bottom: 15px
+    margin: 70px auto 0
+    border-bottom: 1px solid #eaeaea
+    display: table
+    justify-content: center
+    position: relative
+    &__hr
+      width: 63px
+      height: 3px
+      background: $color-coral
+      position: absolute
+      bottom: -1px
+    &__name
+      display: flex
+      justify-content: center
+  &_name
+    text-align: center
+    color: #4d4d4d
+    font-size: 18px
+    font-weight: 600
+    line-height: 24px
+    text-transform: uppercase
+  &_text
+    margin-top: 45px
+    color: #5e5e5e
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+  &_char
+    display: flex
+    justify-content: space-around
+    width: 533px
+    margin: 20px auto 30px
+    color: #b9b9b9
+    font-size: 14px
+    font-weight: 700
+    line-height: 24px
+    text-transform: uppercase
+    span
+      color: #2f2f2f
+    &__material
+      text-align: right
+  &_price
+    color: #ef5b70
+    font-size: 24px
+    font-weight: 700
+    line-height: 24px
+    text-align: center
+    padding-bottom: 43px
+    border-bottom: 1px solid #eaeaea
+  &_attr
+    margin-top: 63px
+    display: flex
+    justify-content: space-between
+  &_addtocart
+    height: 55px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid $color-coral
+    color: $color-coral
+    font-size: 16px
+    font-weight: 700
+    text-decoration: none
+    margin: 28px 0 122px
+    svg
+      font-size: 34px
+      padding-right: 15px
+  &_addtocart:hover
+    border: 1px solid #000000
+    color: #000000
+
+
+
+
+@import "section-hz-subscribe"

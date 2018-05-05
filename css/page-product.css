@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*Секция бредкрумб */
+#breadcrumbs {
+  background-color: #f8f3f4; }
+  #breadcrumbs .container {
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.parent-category {
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.parent-category:hover {
+  color: #000000; }
+
+ul.breadcrumb {
+  display: flex; }
+  ul.breadcrumb li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #f16d7f;
+    margin-left: 5px; }
+  ul.breadcrumb a {
+    text-decoration: none;
+    color: #636363;
+    font-weight: 300; }
+  ul.breadcrumb a:after {
+    content: " /"; }
+  ul.breadcrumb a:hover {
+    color: #f16d7f; }
+
+/*Секция Картинка */
+#product-image {
+  height: 777px;
+  border: 1px solid #eaeaea;
+  background-color: #f7f7f7; }
+  #product-image img {
+    margin: 11px auto;
+    display: block; }
+
+.product-desc {
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  margin: -80px auto 120px;
+  justify-content: center;
+  flex-direction: column; }
+  .product-desc_container {
+    width: 620px;
+    margin: 0 auto; }
+  .product-desc_tag {
+    color: #f16d7f;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin: 70px auto 0;
+    border-bottom: 1px solid #eaeaea;
+    display: table;
+    justify-content: center;
+    position: relative; }
+    .product-desc_tag__hr {
+      width: 63px;
+      height: 3px;
+      background: #f16d7f;
+      position: absolute;
+      bottom: -1px; }
+    .product-desc_tag__name {
+      display: flex;
+      justify-content: center; }
+  .product-desc_name {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase; }
+  .product-desc_text {
+    margin-top: 45px;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px; }
+  .product-desc_char {
+    display: flex;
+    justify-content: space-around;
+    width: 533px;
+    margin: 20px auto 30px;
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase; }
+    .product-desc_char span {
+      color: #2f2f2f; }
+    .product-desc_char__material {
+      text-align: right; }
+  .product-desc_price {
+    color: #ef5b70;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 43px;
+    border-bottom: 1px solid #eaeaea; }
+  .product-desc_attr {
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between; }
+  .product-desc_addtocart {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f16d7f;
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 28px 0 122px; }
+    .product-desc_addtocart svg {
+      font-size: 34px;
+      padding-right: 15px; }
+  .product-desc_addtocart:hover {
+    border: 1px solid #000000;
+    color: #000000; }
+
+/*Секция подписка */
+#subscribe {
+  height: 438px;
+  background: url("../img/cover-bg1.jpg");
+  background-size: cover; }
+
+.reviews {
+  padding-top: 110px;
+  width: 50%;
+  float: left; }
+
+.review-foto {
+  float: left;
+  padding-right: 28px; }
+
+.review-caption {
+  float: left;
+  width: 400px; }
+
+.review-content {
+  color: rgba(34, 34, 36, 0.67);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px; }
+
+.review-author {
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 8px; }
+
+.review-city {
+  color: #222224;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px; }
+
+.subscribe {
+  padding-top: 140px;
+  float: right;
+  text-align: center;
+  width: 390px; }
+
+h3.subscribe-title {
+  color: rgba(34, 34, 36, 0.67);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 54px; }
+
+span.subscribe-text {
+  color: rgba(34, 34, 36, 0.67);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.subscribe-input-box {
+  width: 100%;
+  max-width: 400px;
+  float: left;
+  margin-top: 30px; }
+
+.subscribe-input {
+  background-color: #e1e1e1;
+  color: rgba(34, 34, 36, 0.67);
+  height: 46px;
+  border: none;
+  font-size: 14px;
+  padding-left: 30px;
+  float: left;
+  max-width: 283px;
+  width: 100%;
+  border-radius: 30px 0 0 30px;
+  padding-right: 105px; }
+
+button.subscribe-button {
+  float: left;
+  width: 104px;
+  -webkit-border-fit: lines;
+  overflow: visible;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer; }
+
+.subscribe-button span {
+  height: 46px;
+  line-height: 46px;
+  padding: 0 20px;
+  border-radius: 0 30px 30px 0;
+  opacity: 1;
+  background-color: #f16d7f;
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400; }
+
+.subscribe-button span span {
+  padding: 0;
+  color: inherit;
+  border-width: 0;
+  background: transparent;
+  line-height: inherit; }
+
+/*# sourceMappingURL=page-product.css.map */
